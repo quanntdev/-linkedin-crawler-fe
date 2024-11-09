@@ -1,0 +1,170 @@
+.page {
+  background-color: #fff !important;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif !important;
+  color: #000;
+  min-height: 100vh;
+
+  .pageContent {
+    padding: 20px;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .baseButton {
+    border-radius: 0 !important;
+  }
+
+  .jobDataLabel {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .jobDataGroup {
+    border-radius: 4px;
+    box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .jobHeader {
+    display: flex;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+    }
+
+    .jobInfo {
+      margin-left: 20px;
+
+      .jobName {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+        color: #4096ff;
+        cursor: pointer;
+
+        span {
+          margin-left: 5px;
+        }
+      }
+
+      .companyName {
+        margin-top: 10px;
+        display: flex;
+        font-size: 13px;
+        align-items: center;
+
+        .label {
+          width: 80px;
+        }
+
+        .label2 {
+          width: 180px;
+        }
+
+        .link {
+          text-decoration: underline;
+          color: #4096ff;
+          cursor: pointer;
+        }
+      }
+
+      .description {
+        margin-top: 10px;
+        font-size: 15px;
+
+        .label {
+          font-size: 17px;
+        }
+
+        .stepDesc {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .uploadCsv {
+    margin-top: 20px;
+
+    .groupCsv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .successText {
+      color: rgb(12, 212, 12);
+    }
+  }
+
+  .btnGenPdf {
+    margin-top: 20px;
+  }
+
+  .cvName {
+    margin-bottom: 10px;
+    font-size: 14px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .applyGroup {
+    margin-top: 20px;
+
+    .applyBtn {
+      width: 100%;
+      height: 30px;
+      border-radius: 0  !important;
+    }
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#000 0 0);
+  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0% {
+    background-size: 20% 100%, 20% 100%, 20% 100%;
+  }
+  33% {
+    background-size: 20% 10%, 20% 100%, 20% 100%;
+  }
+  50% {
+    background-size: 20% 100%, 20% 10%, 20% 100%;
+  }
+  66% {
+    background-size: 20% 100%, 20% 100%, 20% 10%;
+  }
+  100% {
+    background-size: 20% 100%, 20% 100%, 20% 100%;
+  }
+}
+
+.loaderCompo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reactour_helper_large {
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+
+.inputCss {
+  border-radius: 0  !important;
+}
