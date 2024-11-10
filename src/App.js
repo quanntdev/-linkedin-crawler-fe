@@ -145,6 +145,12 @@ function App() {
       })
       return
     }
+    if(!jobDetail?.easy_apply) {
+      notification.error({
+        message: "Unable to apply for this job because it does not have easy apply"
+      })
+      return
+    }
     try {
       setLoadingSubmit(true);
       const payload = {
