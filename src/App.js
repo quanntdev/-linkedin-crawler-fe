@@ -237,10 +237,6 @@ function App() {
       ),
     },
     {
-      selector: ".six-step",
-      content: <div>The data of your CV will be displayed here.</div>,
-    },
-    {
       selector: ".seven-step",
       content: (
         <div>
@@ -407,7 +403,7 @@ function App() {
               </div>
             )}
           </div>
-          {currentFileId && (
+          {/* {currentFileId && (
             <div className={styles.btnGenPdf}>
               <Button
                 onClick={runGetCSVData}
@@ -418,9 +414,9 @@ function App() {
                 Generate info from CV
               </Button>
             </div>
-          )}
+          )} */}
 
-          {csvDetail && (
+          {/* {csvDetail && (
             <div>
               <div className={styles.jobDataGroup}>
                 {loadingGenDataCsv ? (
@@ -442,8 +438,8 @@ function App() {
                 )}
               </div>
             </div>
-          )}
-          {!csvDetail && (
+          )} */}
+          {/* {!csvDetail && (
             <div
               className="six-step"
               style={{
@@ -455,7 +451,7 @@ function App() {
             >
               <Empty />
             </div>
-          )}
+          )} */}
         </div>
         {!loadingSubmit ? (
           <div className={`${styles.applyGroup} seven-step`}>
