@@ -24,6 +24,6 @@ export async function getInfoFromCv(id) {
 
 export async function submitCV(payload) {
   const apiUrl = process.env.REACT_APP_API_KEY;
-  const response = await axios.post(`${apiUrl}/apply-job/`, payload);
+  const response = await axios.post(`${apiUrl}/apply-job`, payload);
   return response.data;
 }
